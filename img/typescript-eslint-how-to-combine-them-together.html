@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+       m[i].l=1*new Date();
+       for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+       k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+       ym(91239147, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true
+       });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/91239147" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+
+    <title>Typescript Eslint - How to Combine Them Together</title>
+    <meta name="description" content="In this post, you will learn how to configure ESLint to work seamlessly with TypeScript. I will guide you through the setup process to ensure your TypeScript projects maintain code quality and consistency with ESLint.">
+    <link href="/assets/favicon-0419f6fafa39e641375f3cb64b7bbc6d08bc3911ac2698f8309704185316b16a.png" rel="shortcut icon" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="fLeX-_rW1OMgVXMZwRxdkbxAMewy_8cg5rlgRW473CMoFXv2vjQXzl2ele0j6sa6EWyjlJiP-WkvrAssPgwi5g" />
+    
+
+    <link rel="stylesheet" href="/assets/application-1c54eb5917b2b1152c60f6e8eccd52862f8f3a9077d154d353dec9b70dde2a0b.css" />
+  </head>
+
+  <body  class="flex flex-col min-h-screen bg-gray-50 font-serif text-el-text">
+    <div id="cookies-eu-banner" style="display: none;">
+      By clicking ”OK”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and improve marketing.
+        <button id="cookies-eu-accept">Accept</button>
+    </div>
+    <header>
+      
+<div class="w-full text-gray-700 bg-el-teal border-b border-blue-900">
+  <div class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+    <div class="flex flex-row items-center justify-between">
+      <a class="text-lg font-semibold tracking-widest text-white uppercase rounded-lg focus:outline-none focus:shadow-outline" href="/">
+        <img class="h-16" alt="logo" src="/assets/logo-e4dcfefc4dc5a3aa5065a8be576b92f4759aed9c56b1d834c13cbe8fbffe5483.png" />
+</a>      <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline mobile-menu-button">
+        <svg class="w-6 h-6 text-white hover:text-green-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    <div class="hidden mobile-menu">
+      <ul>
+        <li>
+          <a class="text-xl px-4 py-2 text-md text-white md:mt-0 hover:underline focus:outline-none focus:shadow-outline block" href="/courses">Courses</a>
+        </li>
+        <li>
+          <a class="text-xl px-4 py-2 text-md text-white md:mt-0 hover:underline focus:outline-none focus:shadow-outline block" href="/posts">Posts</a>
+        </li>
+          <li>
+            <a class="text-xl px-4 py-2 text-md text-white md:mt-0 hover:underline focus:outline-none focus:shadow-outline block" href="/users/sign_in">Login</a>
+          </li>
+          <li>
+            <a class="text-xl px-4 py-2 text-md text-white md:mt-0 hover:underline focus:outline-none focus:shadow-outline block" href="/users/sign_up">Register</a>
+          </li>
+      </ul>
+    </div>
+    <nav class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
+      <a class="text-lg px-4 py-2 mt-2 text-md text-white md:mt-0 hover:underline focus:outline-none focus:shadow-outline" href="/courses">Courses</a>
+      <a class="text-lg px-4 py-2 mt-2 text-md text-white md:mt-0 hover:underline focus:outline-none focus:shadow-outline" href="/posts">Posts</a>
+          <a class="text-lg px-4 py-2 mt-2 text-md text-white md:mt-0 hover:underline focus:outline-none focus:shadow-outline" href="/users/sign_in">Login</a>
+          <a class="text-lg px-4 py-2 mt-2 text-md text-white md:mt-0 hover:underline focus:outline-none focus:shadow-outline" href="/users/sign_up">Register</a>
+    </nav>
+  </div>
+</div>
+
+    </header>
+    <main class="flex-grow">
+      
+<div class="w-full pb-10 pt-10">
+  <div class="mx-auto max-w-screen-xl">
+    <h1 class="text-4xl text-center mb-10">
+      Typescript Eslint - How to Combine Them Together
+    </h1>
+
+    <div class="markdown">
+      <p>In this post you will learn how you can configure Eslint together with Typescript.</p>
+
+<h2>Can I use Typescript with Eslint?</h2>
+
+<p>The first question here is if Eslint is usable with Typescript at all. In any typical project you want to use together Prettier, Eslint and Typescript.</p>
+
+<p>Typescript is a really popular solution nowadays to get typings and have stricter Javascript. Which actually means before runtime in transpiling phase we will get errors from Typescript regarding our problems with typings.</p>
+
+<p><img src="https://cdn.monsterlessons-academy.com/posts/240-typescript-eslint/typescript-errors.png" alt="Typescript errors"></p>
+
+<p>We will together with Typescript use Prettier just because we want to prettify our code.</p>
+
+<p>Why then do we need Eslint? Additionally to formatting code with Prettier we need to have some rules regarding our code. These are rules regarding code style that you can use in specific team.</p>
+
+<blockquote>
+<p>But the main problem is that you can&#39;t use Eslint directly with Typescript.</p>
+</blockquote>
+
+<p>It doesn&#39;t work out of the box with Typescript because it&#39;s parser only works with Javascript. This is why we must use additional package.</p>
+
+<p>It is called <code>@typescript-eslint/parser</code> and <code>@typescript-eslint/eslint-plugin</code>. The main point is that we must install a parser for Typescript so Eslint can read it.</p>
+
+<blockquote>
+<p>It is amazing that we can provide parser inside Eslint which allows us to work with Eslint in any language.</p>
+</blockquote>
+
+<p>Here I already generated with a project with single Typescript file. Now let&#39;s install our dependencies.</p>
+<div class="highlight"><pre class="highlight shell"><code>yarn add eslint
+yarn add @typescript-eslint/parser
+yarn add @typescript-eslint/eslint-plugin
+</code></pre></div>
+<h2>Configuration</h2>
+
+<p>The next step here is to configure Eslint. Typically inside our root folder we want to create <code>.eslintrc</code> file. And I already prepared here a configuration.</p>
+<div class="highlight"><pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"root"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"parser"</span><span class="p">:</span><span class="w"> </span><span class="s2">"@typescript-eslint/parser"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"plugins"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"@typescript-eslint"</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"extends"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"eslint:recommended"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"plugin:@typescript-eslint/eslint-recommended"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"plugin:@typescript-eslint/recommended"</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<p>If you used Eslint previously you typically just provide <code>extends</code> with <code>eslint:recommended</code>. You don&#39;t provide parser and plugins.</p>
+<div class="highlight"><pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"root"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"extends"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"eslint:recommended"</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<p>But for Typescript it is not enough. We must provide <code>parser</code> which is exactly the package that we installed. We also provided typescript plugin here and added typescript-eslint rules in <code>extends</code> section.</p>
+
+<p>Now let&#39;s look on our Typescript file.</p>
+<div class="highlight"><pre class="highlight javascript"><code><span class="c1">// src/main.ts</span>
+<span class="kd">const</span> <span class="nx">foo</span> <span class="o">=</span> <span class="p">(</span><span class="nx">a</span><span class="p">:</span> <span class="nx">number</span><span class="p">,</span> <span class="nx">b</span><span class="p">:</span> <span class="nx">string</span><span class="p">):</span> <span class="nx">any</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="nx">bar</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="k">return</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span><span class="p">;</span>
+<span class="p">};</span>
+</code></pre></div>
+<p>As you can see it is not really good code. First of all we return <code>any</code> as a data type here. Also we defined <code>bar</code> property which we don&#39;t use at all.</p>
+
+<p>But still this is a completely valid file for Typescript to transpile. But here we have problems that Eslint can show us.</p>
+
+<p>For this we must define a new script which will work with Typescript.</p>
+<div class="highlight"><pre class="highlight json"><code><span class="nl">"lint"</span><span class="p">:</span><span class="w"> </span><span class="s2">"eslint . --ext .ts"</span><span class="w">
+</span></code></pre></div>
+<p>This command will try to read file with <code>.ts</code> extension.</p>
+
+<p><img src="https://cdn.monsterlessons-academy.com/posts/240-typescript-eslint/eslint-typescript-errors.png" alt="Eslint Typescript errors"></p>
+
+<p>As you can see we get errors from Eslint. And it works only because we use this additional parser. It won&#39;t work just by default inside Eslint.</p>
+
+<p>On the screen you can see that on the right we get errors from <code>@typescript-eslint</code> plugin. These rules are not from Eslint but from this additional package.</p>
+
+<p>Also you can see that we get warnings not only regarding Javascript code but also Typescript types. For example we get a warning about <code>any</code> usage which is not recommended.</p>
+
+<h2>Typescript vs Eslint</h2>
+
+<p>As you can see we get an error that <code>bar is assigned but never used</code>. And you might say here that such rules we can define in Typescript even without Eslint. Yes you can but then you can&#39;t build your Typescript code with such properties. Typically when you try to debug something it is not the behaviour that you want.</p>
+
+<p>If you want to add such rule to Typescript you can write it like this.</p>
+<div class="highlight"><pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"compilerOptions"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"noUnusedLocals"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Eslint shows us warning but doesn&#39;t stop us from transpiling code.</p>
+</blockquote>
+
+<p>This is why it is much better to define such rules in Eslint than in Typescript.</p>
+
+<h2>Where are rules?</h2>
+
+<p>Your last question is for sure &quot;Where can I see all rules for Typescript?&quot;. Here is <a href="https://typescript-eslint.io/rules" rel="nofollow" target="_blank">the official website</a> and here you can see all these rules.</p>
+
+<p>If you just started writing Typescript I highly recommend you to enable Eslint which will help you a lot to improve your code. </p>
+
+<p><strong>Want to sharpen your Typescript skills and succeed in your next interview?</strong> Explore my <a href="https://monsterlessons-academy.com/courses/typescript-interview-questions-coding-interview" rel="nofollow" target="_blank">Typescript Interview Questions Course</a>. This course is designed to help you build confidence, master challenging concepts, and be fully prepared for any coding interview.</p>
+
+
+        <a class="text-xl text-blue-500 hover:underline block" target="_blank" href="https://github.com/monsterlessonsacademy/monsterlessonsacademy/tree/240-typescript-eslint">📚 Source code of what we&#39;ve done</a>
+
+      <div class="mt-10">
+        <div class="text-3xl font-semibold mb-3">Don't miss a thing!</div>
+        <div>Follow me on <a href="https://youtube.com/MonsterlessonsAcademy">Youtube</a>, <a href="https://x.com/monster_lessons">Twitter</a> or <a href="https://www.instagram.com/monsterlessonsacademy/">Instagram</a>.</div>
+      </div>
+
+      <div class="mt-10">
+        <div class="text-3xl font-semibold mb-3">Oleksandr Kocherhin</div>
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <img src="https://cdn.monsterlessons-academy.com/mla-website/author-in-course.png" class="hidden w-40 mr-8 mb-4 author md:block" />
+          <div>
+            Oleksandr Kocherhin is a full-stack developer with a passion for learning and sharing knowledge on <a href="https://monsterlessons-academy.com/">Monsterlessons Academy</a> and on his <a href="https://youtube.com/MonsterlessonsAcademy">YouTube channel</a>. With around 15 years of programming experience and nearly 9 years of teaching, he has a deep understanding of both disciplines. He believes in learning by doing, a philosophy that is reflected in every course he teaches. He loves exploring new web and mobile technologies, and his courses are designed to give students an edge in the fast-moving tech industry.
+          </div>
+        </div>
+      </div>
+
+      <div id="comments"></div>
+    </div>
+
+
+    <script>
+//<![CDATA[
+
+      var data = {
+      comments_api_url: 'https://monsterlessons-academy.com/posts/typescript-eslint-how-to-combine-them-together/comments',
+      current_user_id: null,
+      user_icon_url: '/assets/user-icon-acd4ae82e84d5cd0df86742b23353dd31281e67dbb598bde677167c420720d5b.png'
+      }
+
+//]]>
+</script>  </div>
+</div>
+
+
+
+    </main>
+    <footer>
+      <div class="w-full text-white bg-blue-900 h-36">
+  <div class="max-w-screen-xl flex mx-auto px-4 md:px-6 lg:px-8 flex justify-between items-center h-full">
+    <div>
+      © Monsterlessons Academy 2024
+    </div>
+    <div>
+      <div>
+        <a class="hover:underline" href="/contact">Contact</a>
+      </div>
+      <div>
+        <a class="hover:underline" href="/terms">Terms of Use</a>
+      </div>
+      <div>
+        <a class="hover:underline" href="/privacy">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </footer>
+    <script src="/assets/application-a1802647b9827a4f2b9636aadc50319c8d25915482a1c7529eb87e06c1827d6b.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+  </body>
+</html>
