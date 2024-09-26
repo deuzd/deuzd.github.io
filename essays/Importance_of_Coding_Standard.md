@@ -9,7 +9,7 @@ labels:
   - Coding Standards
 ---
 
-<img width="200px" class="rounded float-start pe-4" src="../img/Importance_of_Coding_Standard/[degree_difficulty.jpg](https://github.com/deuzd/deuzd.github.io/blob/main/img/typescript-eslint-how-to-combine-them-together.html)">
+<img width="200px" class="rounded float-start pe-4" src="../img/Importance_of_Coding_Standard/typescript-eslint-how-to-combine-them-together.html">
 
 ## The Importance of Coding Standard
 
