@@ -24,7 +24,7 @@ labels:
 ## Configuration Management
   Configuration management refers to systematically managing and controlling changes to the components of software such as settings and dependencies. This is extremely helpful when there are multiple versions of the same project due to the different stages of development. The goal of configuration management is consistency and stability during development, as well as tracking changes.
 
-    One well known purpose for this type of management is Git, where teams can track changes to codebases and merge different versions of code. It also includes managing infrastructure, maintaining consistency in development, testing, and production.
+  One well known purpose for this type of management is Git, where teams can track changes to codebases and merge different versions of code. It also includes managing infrastructure, maintaining consistency in development, testing, and production.
 
 ## Conclusion
   Agile and Configuration management are essential for web application along with other uses for software engineering. Agile is very adaptable which suits it for many different aspects like embedded systems and IoT, where constant iterations can help with progress. Configuration management is very helful when it comes to complex systems, ensuring consistency and stability in the development process. There are core priniciples in software engineering that have many applications beyond just web development.
