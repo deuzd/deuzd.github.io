@@ -18,7 +18,7 @@ When you first start, you will also be allowed to choose a character and name th
 
 When you encounter enemies you will be put into a auto battle of sorts where you essentially fight until you either defeat the enemy or lose all you health points. Throughout the maze and sometimes after defeating enemies you can pick up items that do things such as heal you or increase your damage output for the next fight, helping you increase your chances of survival.
 
-Here are some examples of the Java classes used to create the gam:
+Here are some examples of the Java classes used to create the game:
 
 ## Game runner class
 ```java
