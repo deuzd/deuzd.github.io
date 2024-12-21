@@ -9,7 +9,7 @@ labels:
   - Coding Standards
 ---
 
-<img width="200px" class="rounded float-start pe-4" src="../img/Importance_of_Coding_Standard/1353.jpg">
+
 
 ## The Importance of Coding Standard
 
