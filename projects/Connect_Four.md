@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: connect_four_1400x_850084ec-9834-43d0-8547-eb091c0bbc18_300x.png
+image: img/Connect_Four/connect_four.png
 title: "Connect_Four"
 date: 2022-02-08
 published: true
