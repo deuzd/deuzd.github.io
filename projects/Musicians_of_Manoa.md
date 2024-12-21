@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/Musicians_of_Manoa/musiciansofmanoa-logo.png
+image: img/cotton/musiciansofmanoa-logo.png
 title: "Musicians of Manoa"
 date: 2022-12-20
 published: true
