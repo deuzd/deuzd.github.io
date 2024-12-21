@@ -19,4 +19,4 @@ Musicians of Manoa is a web application that was designed to help the students o
 I've learned from this experience how much work goes into a web application as there are so many steps to create something most people take for granted, like a navbar. But overall it is cool to see how there are students that are creating ways to help their fellow students with problems that may not be a top priority to some.
 
 
-Link to the GitHub page: [https://musicians-of-manoa.github.io/]([url](https://github.com/musicians-of-manoa))
+[Link to the GitHub page]([url](https://github.com/musicians-of-manoa))
