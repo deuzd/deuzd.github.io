@@ -18,7 +18,7 @@ The Problem: Many college students go through mental health struggles as they pr
 
 The Solution: Mental Health and Wellness hub designed for UH Manoa students. The platform will provide information on available resources such as allowing students to make counseling appointments.
 
-##Proposer
+## Proposer
 
 Dominic Deuz
 
