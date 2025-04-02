@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: "Project: Counsel Servies"
+title: "Final Project Idea: Counsel Servies"
 # All dates must be YYYY-MM-DD format!
 date: 2025-04-01
 published: true
