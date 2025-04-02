@@ -3,8 +3,8 @@ layout: essay
 type: essay
 title: "Project: Counsel Servies"
 # All dates must be YYYY-MM-DD format!
-date: 2024-11-05
-published: false
+date: 2025-04-01
+published: true
 labels:
   - Coding
   - Webpage
