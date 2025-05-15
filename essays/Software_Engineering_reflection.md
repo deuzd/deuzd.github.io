@@ -4,7 +4,7 @@ type: essay
 title: "Reflecting on Software Engineering"
 # All dates must be YYYY-MM-DD format!
 date: 2024-12-20
-published: false
+published: true
 labels:
   - Web development
   - Software engineering
