@@ -3,7 +3,7 @@ layout: essay
 type: essay
 title: "What is a smart question?"
 # All dates must be YYYY-MM-DD format!
-date: 2025-01-30
+date: 2025-06-13
 published: true
 labels:
   - Coding
