@@ -3,7 +3,7 @@ layout: essay
 type: essay
 title: "The Importance of Coding Standard"
 # All dates must be YYYY-MM-DD format!
-date: 2025-02-13
+date: 2025-06-19
 published: true
 labels:
   - Coding Standards
