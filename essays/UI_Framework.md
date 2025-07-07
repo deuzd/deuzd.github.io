@@ -4,7 +4,7 @@ type: essay
 title: "UI Framework reflection"
 # All dates must be YYYY-MM-DD format!
 date: 2025-07-06
-published: false
+published: true
 labels:
   - UI Framework
 ---
