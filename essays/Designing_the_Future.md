@@ -3,7 +3,7 @@ layout: essay
 type: essay
 title: "Designing the Future"
 # All dates must be YYYY-MM-DD format!
-date: 2025-04-25
+date: 2025-07-24
 published: true
 labels:
   - Coding
