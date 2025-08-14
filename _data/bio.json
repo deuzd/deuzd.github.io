@@ -5,45 +5,49 @@
     "picture": "https://github.com/deuzd.png",
     "email": "deuzd@hawaii.edu",
     "phone": "808-202-8326",
-    "website": "https://deuzd.github.io",
+    "url": "https://deuzd.github.io",
     "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Spring, 2026.",
-    "location": { "address": "", "postalCode": "96818", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
+    "location": {
+      "address": "",
+      "postalCode": "96818",
+      "city": "Honolulu",
+      "countryCode": "US",
+      "region": "Hawaii"
+    },
     "profiles": [
-      { "network": "github", "username": "deuzd", "url": "http://github.com/deuzd" },
-      { "network": "linkedin", "username": "Dominic Deuz", "url": "https://www.linkedin.com/in/dominic-deuz-245217326/" },
+      { "network": "github", "username": "deuzd", "url": "https://github.com/deuzd" },
+      { "network": "linkedin", "username": "Dominic Deuz", "url": "https://www.linkedin.com/in/dominic-deuz-245217326/" }
     ]
   },
   "interests": [
     { "name": "Game design" },
-    { "name": "Artificial intelligence" },
+    { "name": "Artificial intelligence" }
   ],
   "skills": [
     {
       "name": "Languages and Frameworks",
-      "keywords": [ "C", "C++", "Java", "Javascript", "Typescript", "Python" ]
+      "keywords": ["C", "C++", "Java", "JavaScript", "TypeScript", "Python"]
     },
     {
       "name": "Toolsets/OS",
-      "keywords": [ "MacOS", "Git/GitHub"]
+      "keywords": ["macOS", "Git/GitHub"]
     }
   ],
   "education": [
     {
       "institution": "Moanalua High School, Honolulu, HI",
-      "studyType": "High School Diploma.",
+      "studyType": "High School Diploma",
       "startDate": "2018-08-05",
-      "endDate": "2022-5-25",
-      "courses": [
-      ]
-    }
+      "endDate": "2022-05-25",
+      "courses": []
+    },
     {
-      "institution": "University of Hawaii, Honolulu, HI",
+      "institution": "University of Hawaii at Manoa, Honolulu, HI",
       "area": "Computer Science (expected Spring, 2026)",
       "studyType": "B.S.",
       "startDate": "2022-09-01",
       "endDate": "Present",
-      "courses": [
-      ]
+      "courses": []
     }
   ],
   "work": [
@@ -53,21 +57,27 @@
       "website": "",
       "startDate": "2024-01-03",
       "endDate": "Present",
-      "summary": "Sales associate, cashier, new employee trainer",
-      
-    },
+      "summary": "Sales associate, cashier, new employee trainer"
+    }
   ],
+  "volunteer": [
+    {
+      "organization": "ACM Manoa",
+      "website": "",
+      "position": "Chair",
+      "startDate": "2016-01-01",
+      "endDate": "Present",
+      "summary": "",
+      "highlights": []
     },
     {
-      "organization": "",
+      "organization": "IEEE Student Branch, UH Manoa",
       "website": "",
-      "position": "Professional organization involvement",
-      "startDate": "",
-      "endDate": "",
+      "position": "Member / Webmaster-IT Officer",
+      "startDate": "2012-01-01",
+      "endDate": "2014-12-31",
       "summary": "",
-      "highlights": [
-        "Chair, ACM Manoa, 2016-Present",
-        "Member, IEEE Student Branch, 2014-Present",
-        "Webmaster/IT Officer, IEEE Student Branch, UH Manoa, 2012-2013"
-      ]
+      "highlights": []
     }
+  ]
+}
