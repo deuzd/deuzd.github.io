@@ -2,7 +2,7 @@
 layout: project
 type: project
 image: img/cotton/connect_four.png
-title: "Connect_Four"
+title: "Connect Four"
 date: 2022-02-08
 published: true
 labels:
