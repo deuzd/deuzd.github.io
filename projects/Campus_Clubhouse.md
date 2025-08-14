@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/micromouse/micromouse-square.jpg
+image: img/CC-home.png
 title: "Campus_Clubhouse"
 date: 2025-08-13
 published: true
