@@ -2,7 +2,7 @@
 layout: project
 type: project
 image: img/CC-home.png
-title: "Campus_Clubhouse"
+title: "Campus Clubhouse"
 date: 2025-08-13
 published: true
 labels:
