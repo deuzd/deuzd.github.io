@@ -29,6 +29,14 @@
   ],
   "education": [
     {
+      "institution": "Moanalua High School, Honolulu, HI",
+      "studyType": "High School Diploma.",
+      "startDate": "2018-08-05",
+      "endDate": "2022-5-25",
+      "courses": [
+      ]
+    }
+    {
       "institution": "University of Hawaii, Honolulu, HI",
       "area": "Computer Science (expected Spring, 2026)",
       "studyType": "B.S.",
@@ -41,11 +49,11 @@
   "work": [
     {
       "company": "Hawaiian Island Creations",
-      "position": "Keyholder",
+      "position": "Supervisor",
       "website": "",
       "startDate": "2024-01-03",
       "endDate": "Present",
-      "summary": "Sales associate",
+      "summary": "Sales associate, cashier, new employee trainer",
       
     },
   ],
