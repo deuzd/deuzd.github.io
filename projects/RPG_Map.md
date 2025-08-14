@@ -2,7 +2,7 @@
 layout: project
 type: project
 image: img/micromouse/micromouse-square.jpg
-title: "RPG_Map"
+title: "RPG Map"
 date: 2022-04-15
 published: true
 labels:
