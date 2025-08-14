@@ -59,25 +59,5 @@
       "endDate": "Present",
       "summary": "Sales associate, cashier, new employee trainer"
     }
-  ],
-  "volunteer": [
-    {
-      "organization": "ACM Manoa",
-      "website": "",
-      "position": "Chair",
-      "startDate": "2016-01-01",
-      "endDate": "Present",
-      "summary": "",
-      "highlights": []
-    },
-    {
-      "organization": "IEEE Student Branch, UH Manoa",
-      "website": "",
-      "position": "Member / Webmaster-IT Officer",
-      "startDate": "2012-01-01",
-      "endDate": "2014-12-31",
-      "summary": "",
-      "highlights": []
-    }
   ]
 }
