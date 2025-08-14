@@ -13,6 +13,8 @@ summary: "A simple connect four game that can print out a map and has the player
 
 In this project I did in high school we made a simple connect for game. The players will alternate turn and choose a column to drop their piece in. The piece will "fall" until it hits a piece that was alread dropped or the bottom of the frame of the game, being the "bottom". It will constantly look for a winner, being able to read if there is four of a kind in any row, column, or diagonal.
 
+![](/img/connectfour.png){: width="400" }
+
 ## ConnectFour class to place pieces
 ```java
 public class ConnectFour {
